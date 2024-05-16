@@ -1,0 +1,352 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family:sans-serif;
+    height: 100%;
+    max-width: 100%;
+
+}
+.box{
+    min-height:100%;
+    width:100%;
+    background-color: transparent;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+    padding-top:0;
+    position: sticky;
+    top:0;
+    background-color: #fff;
+    transition:opacity  1s;
+
+}
+.navbar h2{
+    width:140px;
+    cursor: pointer;
+    font-size: 40px;
+    padding-left:25px;
+    color: rgb(174,87,99);
+}
+.navbar ul li{
+    list-style:none;
+    display: inline-block;
+    margin:0 20px;
+}
+
+
+.navbar ul li a{
+    text-decoration: none;
+    color:rgb(174,87,99);
+    border:none;
+    border-radius:4px;
+    padding:10px;
+    
+}
+.navbar ul li a:hover{
+    background-color: rgb(229,223,222);
+    opacity: 0.8;
+}
+
+.first{
+    background-color: rgb(229,223,222);
+    justify-content:space-evenly;
+    height:280px;
+    align-items: center;
+    display: flex;
+    flex-direction:column;
+    width:100%;
+    
+    
+    
+}
+.first h2{
+    font-size:50px;
+    color:rgb(174,87,99);
+}
+.first p{
+    font-size:18px;
+    color:black;
+}
+.first button {
+    background-color:rgb(174,87,99);
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:18px;
+    padding: 10px;
+    font-style: bold;
+}
+.sec{
+    color:rgb(174,87,99);
+}
+.second{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom:50px;
+}
+.second .container img{
+    width:300px;
+    height:250px;
+    padding:10px;
+    border:none;
+    border-radius:30px;
+}
+.container{
+    box-shadow:0 0 5px rgba(10,0,0,0.2);
+    border-radius:5px;
+}
+.second .container h3{
+    font-size:20px;
+    padding-left:10px;
+    color:rgb(174,87,99);
+}
+.second .container p{
+    width:300px;
+    padding-left:10px;
+}
+h1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top:60px;
+    margin-bottom:50px;
+}
+.third{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height:500px;
+    background-color: rgb(229,223,222);
+}
+.third img{
+    width:400px;
+    height:250px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+.third h2{
+    font-size:35px;
+    color:rgb(174,87,99);
+}
+.fourth{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+.service{
+    color:rgb(174,87,99);
+}
+.services{
+    background-color: white;
+    border:none;
+    border-radius:10px;
+    box-shadow:0 0 5px rgba(0,0,0,0.3);
+    width:250px;
+    padding:10px;
+
+}
+.hd{
+    color:rgb(174,87,99);
+}
+.fourth .services img{
+    border-radius:50%;
+}
+.cust{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(174,87,99);
+}
+.fifth{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:40px;
+}
+.review{
+    border:none;
+    box-shadow:0 0 5px rgba(0,0,0,0.3);
+    border-radius:20%;
+    padding:10px;
+    width:250px;
+    background-color: rgb(229,223,222);
+}
+.fifth .images{
+    border:none;
+    border-radius:50%;
+}
+.name{
+    background-color:#fff;
+    color:black;
+    font-weight: bold;
+    background-color: rgb(229,223,222);
+}
+.sixth{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-evenly;
+    background-color: rgb(229,223,222);
+    height:500px;
+    margin-bottom:10px;
+}
+.sixth .part1 h3{
+    color:rgb(174,87,99);
+}
+.sixth .part1 form input{
+    display: flex;
+    flex-direction: flex-start;
+    justify-content: space-evenly;
+    margin:15px;
+    padding-top:15px;
+    padding-bottom: 15px;
+    padding-left:5px;
+    width:600px;
+    font-size:16px;
+}
+.sixth .part1 form textarea{
+    margin-left: 12px;
+    
+}
+.sixth .part1 form ::placeholder{
+    font-size:16px;
+}
+.sixth .part1 button{
+    padding-top:12px;
+    padding-bottom: 12px;
+    padding-left:8px;
+    padding-right:8px;
+    margin-left:12px;
+    background-color: rgb(174,87,99);
+    border:none;
+    border-radius:5px;
+    color:white;
+    font-style:bold;
+}
+.sixth .part1 h3{
+    font-size:30px;
+    margin-left:12px;
+}
+.sixth .part2{
+    display: flex;
+    flex-direction: column;
+    
+}
+.sixth .part2 h2{
+    font-size:30px;
+    color:rgb(174,87,99);
+}
+.last{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+@media (max-width: 1024px) {
+    .second, .fifth {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .second .container, .fifth .review {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .fourth {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fourth .services {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .sixth {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .sixth .part1, .sixth .part2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sixth .part1 form input, .sixth .part1 form textarea {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar h2 {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .first {
+        height: auto;
+        padding: 20px;
+    }
+
+    .first h2 {
+        font-size: 36px;
+    }
+
+    .first p {
+        font-size: 16px;
+    }
+
+    .first button {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .third {
+        height: auto;
+        padding: 20px;
+    }
+
+    .third h2 {
+        font-size: 28px;
+    }
+
+    .third img {
+        width: 90%;
+    }
+
+    .second .container img, .fifth .review img {
+        width: 90%;
+        height: auto;
+    }
+
+    .services, .review {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .sixth .part1 h3, .sixth .part2 h2 {
+        font-size: 24px;
+    }
+
+    .navbar h2 {
+        font-size: 30px;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+}
